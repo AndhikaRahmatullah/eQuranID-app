@@ -27,10 +27,12 @@ const Home = () => {
 				<OnLoading />
 			) : (
 				<>
-					<Banner
-						data={allData.data}
-						isLoading={isLoading}
-					/>
+					{allData.data && allData.data.length > 0 && (
+						<Banner
+							data={allData.data}
+							isLoading={isLoading}
+						/>
+					)}
 
 					<div className="mx-5 my-10 lg:mx-32 lg:my-20">
 						<Title name={"Surah"} />

@@ -12,7 +12,7 @@ export default function Navbar() {
 
 	const handleOptionData = () => {
 		const data = allData.data;
-		if (!isLoading & allData) {
+		if (!isLoading && data && data.length > 0) {
 			const newData = data.map((d) => ({
 				value: d.nomor,
 				label: `${d.nomor}. ${d.namaLatin}`,

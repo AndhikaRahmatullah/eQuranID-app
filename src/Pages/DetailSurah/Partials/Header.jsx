@@ -36,15 +36,15 @@ const Header = ({ className = "", namaLatin, arti, nama, tempatTurun, jumlahAyat
 					title={"Info Surah"}
 					subTitle={`${namaLatin}`}
 					description={description}
-					imageButton={"/public/assets/info.png"}
+					imageButton={"../../../assets/info.png"}
 					titleButton={"Info Surah"}
 				/>
 
 				{/* audio */}
 				<Audio
 					srcAudio={audioFull["05"] ? audioFull["05"] : audioFull["01"]}
-					onPlaySrcImage={"/public/assets/pause_primary.png"}
-					onPauseSrcImage={"/public/assets/audio_primary.png"}
+					onPlaySrcImage={"../../../assets/pause_primary.png"}
+					onPauseSrcImage={"../../../assets/audio_primary.png"}
 					id={"surahAudioFull"}
 					buttonTitle={true}
 				/>

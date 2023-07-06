@@ -41,7 +41,7 @@ const Menu = ({ className = "", onIsPlaying, nomor, nomorAyat, audio, namaSurah,
 			<div className="flex flex-col gap-5">
 				<div>
 					<img
-						src={isPlaying && nomorAyat === ayatOnPlaying ? "/public/assets/pause_light.png" : "/public/assets/audio_light.png"}
+						src={isPlaying && nomorAyat === ayatOnPlaying ? "../../../assets/pause_light.png" : "../../../assets/audio_light.png"}
 						alt="Audio"
 						onClick={() => (isPlaying ? pauseAudio(nomorAyat) : playAudio(nomorAyat))}
 						className="h-[20px] w-[20px] cursor-pointer md:h-[25px] md:w-[25px]"
@@ -60,7 +60,7 @@ const Menu = ({ className = "", onIsPlaying, nomor, nomorAyat, audio, namaSurah,
 						title={"Tafsir"}
 						subTitle={`${namaSurah} Ayat ${nomorAyat}`}
 						description={tafsir[`${nomorAyat - 1}`].teks}
-						imageButton={"/public/assets/tafsir_light.png"}
+						imageButton={"../../../assets/tafsir_light.png"}
 					/>
 				</div>
 			</div>

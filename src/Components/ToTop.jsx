@@ -21,7 +21,7 @@ export default function ToTop() {
 			variants={variants}
 			className={onTop ? "fixed bottom-5 right-5 cursor-default transition-opacity duration-300" : "fixed bottom-5 right-5 transition-opacity duration-300"}>
 			<motion.img
-				src="/public/assets/back_to_top.png"
+				src="../assets/back_to_top.png"
 				alt="ToTop"
 				className="h-[45px] w-[45px] rounded-full shadow-lg shadow-dark_app/30 transition-all duration-300 hover:animate-pulse lg:h-[50px] lg:w-[50px]"
 			/>

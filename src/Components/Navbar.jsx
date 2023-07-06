@@ -89,7 +89,8 @@ export default function Navbar() {
 					className="flex cursor-pointer items-center gap-1">
 					<div className="w-10 rounded-full">
 						<img
-							src="/public/assets/logo.png"
+							// src="/public/assets/logo.png"
+							src="../assets/logo.png"
 							alt="Logo"
 							className="h-9 w-9 rounded-full border-2 border-light_app"
 						/>
